@@ -1,8 +1,8 @@
 package com.san.mapper;
 
 import com.san.domain.entity.UserJpaEntity;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
+//import org.springframework.data.jpa.repository.JpaRepository;
+//import org.springframework.stereotype.Repository;
 
 /**
  * @author yujie
@@ -12,7 +12,8 @@ import org.springframework.stereotype.Repository;
  * @description
  * @date 2019/05/13 21:14
  */
-public interface UserJpaMapper extends JpaRepository<UserJpaEntity, Long> {
+//public interface UserJpaMapper extends JpaRepository<UserJpaEntity, Long> {
+public interface UserJpaMapper  {
     /**
      * 通过userName查询用户
      *
