@@ -19,6 +19,22 @@ Thymeleaf 最大的特点是能够直接在浏览器中打开并正确显示模�
 * URL 在 Web 应用模板中占据着十分重要的地位，需要特别注意的是 Thymeleaf 对于 URL 的处理是通过语法 @{...} 来处理的。  
 Thymeleaf 支持绝对路径 URL  
 `<a th:href="@{http://www.thymeleaf.org}">Thymeleaf</a>`
+---
+### mybatis 
+    使用手册： http://www.mybatis.org/mybatis-3/zh/java-api.html
+    
+    @Select 是查询类的注解，所有的查询均使用这个
+    @Result 修饰返回的结果集，关联实体类属性和数据库字段一一对应，如果实体类属性和数据库属性名保持一致，就不需要这个属性来修饰。
+    @Insert 插入数据库使用，直接传入实体类会自动解析属性到对应的值
+    @Update 负责修改，也可以直接传入对象
+    @delete 负责删除
+    
+    注意，使用#符号和$符号的不同
+    # 预编译（prepared statement），防止SQL注入攻击
+    $ 无预编译
+    如下：
+    预编译：select * from table where id = '1';（将入参转为字符串类型）
+    非预编译：select * from table where id = 1;（直接注入）
 
 ---
 ### Redis 下载地址   
