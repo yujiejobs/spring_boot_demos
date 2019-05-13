@@ -49,7 +49,7 @@ public class WebConfiguration {
         public void doFilter(ServletRequest srequest, ServletResponse sresponse, FilterChain filterChain)
                 throws IOException, ServletException {
             HttpServletRequest request = (HttpServletRequest) srequest;
-            System.out.println("this is MyFilter,url :" + request.getRequestURI());
+//            System.out.println("this is MyFilter,url :" + request.getRequestURI());
             filterChain.doFilter(srequest, sresponse);
         }
 
