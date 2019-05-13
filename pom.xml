@@ -68,6 +68,11 @@
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-pool2</artifactId>
 		</dependency>
+		<!-- redis session	-->
+		<dependency>
+			<groupId>org.springframework.session</groupId>
+			<artifactId>spring-session-data-redis</artifactId>
+		</dependency>
 		<!--
 			热部署，该模块在完整的打包环境下运行的时候会被禁用。
 			如果你使用java -jar启动应用或者用一个特定的classloader启动，

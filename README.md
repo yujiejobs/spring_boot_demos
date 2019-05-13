@@ -36,6 +36,10 @@ Spring Boot 1.0 默认使用的是 Jedis 客户端，2.0 替换成 Lettuce，但
 它利用优秀 netty NIO 框架来高效地管理多个连接
 
 ---
+Redis 共享 Session  
+Spring Session 提供了一套创建和管理 Servlet HttpSession 的方案。Spring Session 提供了集群 Session（Clustered Sessions）功能，默认采用外置的 Redis 来存储 Session 数据，以此来解决 Session 共享的问题。
+
+---
 
 【The server time zone value 'ÖÐ¹ú±ê×¼Ê±¼ä' is unrecognized or represents more than one time zone】  
 解决方案(数据库执行)：  
