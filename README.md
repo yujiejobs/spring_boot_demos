@@ -19,6 +19,22 @@ Thymeleaf 最大的特点是能够直接在浏览器中打开并正确显示模�
 * URL 在 Web 应用模板中占据着十分重要的地位，需要特别注意的是 Thymeleaf 对于 URL 的处理是通过语法 @{...} 来处理的。  
 Thymeleaf 支持绝对路径 URL  
 `<a th:href="@{http://www.thymeleaf.org}">Thymeleaf</a>`
+
+---
+### Redis 下载地址   
+https://github.com/MSOpenTech/redis/releases
+* Redis 是目前业界使用最广泛的内存数据存储。相比 Memcached，Redis 支持更丰富的数据结构，  
+例如 hashes, lists, sets 等，同时支持数据持久化。除此之外，Redis 还提供一些类数据库的特性，  
+比如事务，HA，主从库。可以说 Redis 兼具了缓存系统和数据库的一些特性，因此有着丰富的应用场景  
+
+* Spring Boot 提供了对 Redis 集成的组件包：spring-boot-starter-data-redis  
+spring-boot-starter-data-redis依赖于spring-data-redis 和 lettuce 。  
+Spring Boot 1.0 默认使用的是 Jedis 客户端，2.0 替换成 Lettuce，但如果你从 Spring Boot 1.5.X 切换过来，  
+几乎感受不大差异，这是因为 spring-boot-starter-data-redis 为我们隔离了其中的差异性。
+
+* Lettuce 是一个可伸缩线程安全的 Redis 客户端，多个线程可以共享同一个 RedisConnection，  
+它利用优秀 netty NIO 框架来高效地管理多个连接
+
 ---
 
 【The server time zone value 'ÖÐ¹ú±ê×¼Ê±¼ä' is unrecognized or represents more than one time zone】  
