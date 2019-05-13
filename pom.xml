@@ -35,7 +35,16 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-        <!--
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		<!--	配合spring.thymeleaf.mode = LEGACYHTML5使用	-->
+		<dependency>
+			<groupId>net.sourceforge.nekohtml</groupId>
+			<artifactId>nekohtml</artifactId>
+		</dependency>
+		<!--
             热部署，该模块在完整的打包环境下运行的时候会被禁用。
             如果你使用java -jar启动应用或者用一个特定的classloader启动，
             它会认为这是一个“生产环境”
