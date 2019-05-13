@@ -1,5 +1,5 @@
 ## spring_boot_init
-####springboot脚手架
+### springboot脚手架
 Spring Boot的基础结构共三个文件
 * src/main/java  程序开发以及主程序入口
 * src/main/resources 配置文件
@@ -10,7 +10,7 @@ Spring Boot的基础结构共三个文件
 3、service 层主要是业务类代码  
 4、controller 负责页面访问控制
 ---
-#### Thymeleaf 模板
+### Thymeleaf 模板
 Spring Boot 推荐使用 Thymeleaf 来代替 Jsp  
 * Thymeleaf 是一款用于渲染 XML/XHTML/HTML5 内容的模板引擎。类似 JSP，Velocity，FreeMaker 等，
 它也可以轻易的与 Spring MVC 等 Web 框架进行集成作为 Web 应用的模板引擎。与其它模板引擎相比
