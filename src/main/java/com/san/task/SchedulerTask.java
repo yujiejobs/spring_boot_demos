@@ -25,7 +25,7 @@ public class SchedulerTask {
     /**
      * 每隔6秒打印
      */
-    @Scheduled(cron = "*/6 * * * * ?")
+    @Scheduled(cron = "*/600 * * * * ?")
     private void process() {
         System.out.println("this is scheduler task runing  " + (count++));
     }
@@ -35,7 +35,7 @@ public class SchedulerTask {
     /**
      * 每隔6秒打印
      */
-    @Scheduled(fixedRate = 6000)
+    @Scheduled(fixedRate = 600000)
     public void reportCurrentTime() {
         System.out.println("现在时间：" + dateFormat.format(new Date()));
     }
