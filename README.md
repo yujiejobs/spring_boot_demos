@@ -47,6 +47,11 @@ Thymeleaf 支持绝对路径 URL
     预编译：select * from table where id = '1';（将入参转为字符串类型）
     非预编译：select * from table where id = 1;（直接注入）
 
+--- 
+### MyBatis-Plus
+（简称 MP）是一个 MyBatis 的增强工具，在 MyBatis 的基础上只做增强不做改变，为简化开发、提高效率而生  
+https://mp.baomidou.com
+
 ---
 ### MongoDB  
 * MongoDB 是最早热门非关系数据库的之一，使用也比较普遍，一般会用做离线数据分析来使用，放到内网的居多  

@@ -55,10 +55,16 @@
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
 		<!-- mybatis	-->
+<!--		<dependency>-->
+<!--			<groupId>org.mybatis.spring.boot</groupId>-->
+<!--			<artifactId>mybatis-spring-boot-starter</artifactId>-->
+<!--			<version>2.0.0</version>-->
+<!--		</dependency>-->
+		<!-- MyBatis-Plus 含有mybatis，故注释上面dependency		-->
 		<dependency>
-			<groupId>org.mybatis.spring.boot</groupId>
-			<artifactId>mybatis-spring-boot-starter</artifactId>
-			<version>2.0.0</version>
+			<groupId>com.baomidou</groupId>
+			<artifactId>mybatis-plus-boot-starter</artifactId>
+			<version>3.1.1</version>
 		</dependency>
 		<!-- mongodb	-->
 		<dependency>
