@@ -96,6 +96,22 @@ PHP、ActionScript、XMPP、STOMP 等，支持 AJAX。用于在分布式系统�
 [详情可见]http://www.ityouknow.com/springboot/2016/11/30/spring-boot-rabbitMQ.html
 
 ---
+### 邮件服务
+早期的时候我们会使用 JavaMail 相关 api 来写发送邮件的相关代码，后来 Spring 推出了 JavaMailSender 更加简化了邮件发送的过程，在之后 Spring Boot 对此进 行了封装就有了现在的 spring-boot-starter-mail
+注意需要开启邮件服务器的 POP3/SMTP/IMAP 服务
+
+
+* 发送失败  
+因为各种原因，总会有邮件发送失败的情况，比如：邮件发送过于频繁、网络异常等。在出现这种情况的时候，我们一般会考虑重新重试发送邮件，会分为以下几个步骤来实现：
+
+1、接收到发送邮件请求，首先记录请求并且入库。  
+2、调用邮件发送接口发送邮件，并且将发送结果记录入库。  
+3、启动定时系统扫描时间段内，未发送成功并且重试次数小于3次的邮件，进行再次发送  
+* 异步发送
+很多时候邮件发送并不是我们主业务必须关注的结果，比如通知类、提醒类的业务可以允许延时或者失败。这个时候可以采用异步的方式来发送邮件，加快主交易执行速度，在实际项目中可以采用MQ发送邮件相关参数，监听到消息队列（RabbitMQ来实现）之后启动发送邮件。
+
+
+---
 
 【The server time zone value 'ÖÐ¹ú±ê×¼Ê±¼ä' is unrecognized or represents more than one time zone】  
 解决方案(数据库执行)：  
