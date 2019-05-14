@@ -1,4 +1,15 @@
 ## spring_boot_init
+---
+项目配置双数据源，请先创建两个数据库test tese1：
+分别创建数据表，并手动插入相关数据  
+CREATE TABLE `user` (  
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,  
+  `email` varchar(255) NOT NULL,  
+  `pass_word` varchar(255) NOT NULL,  
+  `user_name` varchar(255) NOT NULL,  
+  PRIMARY KEY (`id`),  
+) 
+
 ### springboot脚手架
 Spring Boot的基础结构共三个文件
 * src/main/java  程序开发以及主程序入口
