@@ -127,6 +127,58 @@ PHP、ActionScript、XMPP、STOMP 等，支持 AJAX。用于在分布式系统�
 
 
 ---
+### 投产上线
+* 打成 jar 包  
+`mvn clean package`  
+`mvn clean package  -Dmaven.test.skip=true`  
+后台运行的方式来启动  
+`nohup java -jar spring-boot-name-1.0.0.jar &`  
+也可以在启动的时候选择读取不同的配置文件  
+`java -jar app.jar --spring.profiles.active=dev`  
+也可以在启动的时候设置 jvm 参数  
+`java -Xms10m -Xmx80m -jar app.jar &`
+
+* 打成 war 包  
+maven 项目，修改 pom 包，将 `<packaging>jar</packaging>  ` 改为 `<packaging>war</packaging>`  
+打包时排除tomcat ,将 scope 属性设置为 provided，这样在最终形成的 WAR 中不会包含这个 JAR 包    
+`
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-tomcat</artifactId>
+	<scope>provided</scope>
+</dependency>
+`  
+注册启动类  
+`public class ServletInitializer extends SpringBootServletInitializer {
+     @Override
+     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+         return application.sources(Application.class);
+     }
+ }`  
+最后执行  
+`mvn clean package  -Dmaven.test.skip=true`
+---
+### 生产运维  
+* 查看 JVM 参数的值
+`jinfo -flags pid`  
+来查看 jar 启动后使用的是什么 gc、新生代、老年代分批的内存都是多少，示例如下：  
+`-XX:CICompilerCount=3 -XX:InitialHeapSize=234881024 -XX:MaxHeapSize=3743416320 -XX:MaxNewSize=1247805440 -XX:MinHeapDeltaBytes=524288 -XX:NewSize=78118912 -XX:OldSize=156762112 -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseFastUnorderedTimeStamps -XX:+UseParallelGC`  
+-XX:CICompilerCount  ：最大的并行编译数  
+-XX:InitialHeapSize 和 -XX:MaxHeapSize ：指定 JVM 的初始和最大堆内存大小  
+-XX:MaxNewSize ： JVM 堆区域新生代内存的最大可分配大小  
+…  
+-XX:+UseParallelGC ：垃圾回收使用 Parallel 收集器  
+* 如何重启  
+直接 kill 掉进程再次启动 jar 包  ，拿到对于Java程序的pid  
+`ps -ef|grep java`  
+`kill -9 pid`  
+`Java -jar  xxxx.jar`  
+
+``
+
+
+
+---
 
 【The server time zone value 'ÖÐ¹ú±ê×¼Ê±¼ä' is unrecognized or represents more than one time zone】  
 解决方案(数据库执行)：  
