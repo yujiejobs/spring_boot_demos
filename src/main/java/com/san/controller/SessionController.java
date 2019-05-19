@@ -1,5 +1,6 @@
 package com.san.controller;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpSession;
@@ -15,7 +16,7 @@ import java.util.UUID;
  */
 @RequestMapping("session")
 public class SessionController {
-    @RequestMapping("/uid")
+    @GetMapping("/uid")
     public void uid(HttpSession session) {
         UUID uid = (UUID) session.getAttribute("uid");
         if (uid == null) {

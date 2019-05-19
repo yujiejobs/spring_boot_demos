@@ -2,6 +2,7 @@ package com.san.controller;
 
 import com.san.mail.MailService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.thymeleaf.TemplateEngine;
@@ -27,7 +28,7 @@ public class MailController {
     /**
      * 发送普通邮件
      */
-    @RequestMapping("/sendSimpleMail")
+    @GetMapping("/sendSimpleMail")
     public void sendSimpleMail() {
         mailService.sendSimpleMail("2211024378@qq.com", "test simple mail", " hello this is simple mail");
     }
@@ -35,7 +36,7 @@ public class MailController {
     /**
      * 发送 html 格式邮件
      */
-    @RequestMapping("/sendHtmlMail")
+    @GetMapping("/sendHtmlMail")
     public void sendHtmlMail() {
         String content = "<html>\n" +
                 "<body>\n" +
@@ -49,7 +50,7 @@ public class MailController {
     /**
      * 发送带附件的邮件
      */
-    @RequestMapping("/sendAttachmentsMail")
+    @GetMapping("/sendAttachmentsMail")
     public void sendAttachmentsMail() {
         String filePath = "D:\\1234.txt";
         mailService.sendAttachmentsMail("2211024378@qq.com", "主题：带附件的邮件", "有附件，请查收", filePath);
@@ -58,7 +59,7 @@ public class MailController {
     /**
      * 发送带静态资源的邮件
      */
-    @RequestMapping("/sendInlineResourceMail")
+    @GetMapping("/sendInlineResourceMail")
     public void sendInlineResourceMail() {
         String rscId = "neo006";
         String content="<html><body>这是有图片的邮件：<img src=\'cid:" + rscId + "\' ></body></html>";
@@ -70,7 +71,7 @@ public class MailController {
     /**
      * 解析模板并发送
      */
-    @RequestMapping("/sendTemplateMail")
+    @GetMapping("/sendTemplateMail")
     public void sendTemplateMail() {
         //创建邮件正文
         Context context = new Context();

@@ -35,7 +35,7 @@ public class TemplatesController {
      * @param model 一个接口， 其实现类为ExtendedModelMap，继承了ModelMap类
      * @return 跳转url地址别名或者物理跳转地址
      */
-    @RequestMapping(value = "/index1")
+    @GetMapping(value = "/index1")
     public String index1(Model model) {
         model.addAttribute("result", "后台返回index1");
         return "result";
@@ -48,7 +48,7 @@ public class TemplatesController {
      * @return 跳转url地址别名或者物理跳转地址
      */
 
-    @RequestMapping(value = "/index2")
+    @GetMapping(value = "/index2")
     public String index2(ModelMap model) {
         model.addAttribute("result", "后台返回index2");
         return "result";
@@ -59,7 +59,7 @@ public class TemplatesController {
      *
      * @return 返回一个模板视图对象
      */
-    @RequestMapping(value = "/index3")
+    @GetMapping(value = "/index3")
     public ModelAndView index3() {
         ModelAndView mv = new ModelAndView("result");
         mv.addObject("result", "后台返回index3");
@@ -72,7 +72,7 @@ public class TemplatesController {
      *
      * @return 返回一个模板视图对象
      */
-    @RequestMapping(value = "/index4")
+    @GetMapping(value = "/index4")
     public ModelAndView index4() {
         Map<String, String> map = new HashMap<>(10);
         map.put("result", "后台返回index4");

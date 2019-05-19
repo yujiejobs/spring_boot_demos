@@ -3,6 +3,7 @@ package com.san.controller;
 import com.san.domain.entity.UserEntity;
 import com.san.mongo.UserMongoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -25,7 +26,7 @@ public class MongoDBController {
     /**
      * 创建对象
      */
-    @RequestMapping("/saveUser")
+    @GetMapping("/saveUser")
     public void saveUser() {
         UserEntity user = new UserEntity();
         user.setId(22L);
@@ -39,7 +40,7 @@ public class MongoDBController {
      *
      * @return
      */
-    @RequestMapping("/findUserByUserName")
+    @GetMapping("/findUserByUserName")
     public UserEntity findUserByUserName() {
         UserEntity user = userRepository.findUserByUserName("yu");
         return user;
@@ -48,7 +49,7 @@ public class MongoDBController {
     /**
      * 更新对象
      */
-    @RequestMapping("/updateUser")
+    @GetMapping("/updateUser")
     public void updateUser() {
         UserEntity user = new UserEntity();
         user.setId(20L);
@@ -60,7 +61,7 @@ public class MongoDBController {
     /**
      * 删除对象
      */
-    @RequestMapping("/deleteUserById")
+    @GetMapping("/deleteUserById")
     public void deleteUserById() {
         userRepository.deleteUserById(20L);
     }

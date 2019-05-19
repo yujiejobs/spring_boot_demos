@@ -6,6 +6,7 @@ import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -29,17 +30,17 @@ public class RedisController {
     @Autowired
     private RedisTemplate redisTemplate;
 
-    @RequestMapping("/setStringValue")
+    @GetMapping("/setStringValue")
     public void setValue() {
         stringRedisTemplate.opsForValue().set("key", "String For Value");
     }
 
-    @RequestMapping("/getStringValue")
+    @GetMapping("/getStringValue")
     public void getValue() {
         System.out.println(stringRedisTemplate.opsForValue().get("key"));
     }
 
-    @RequestMapping("/setObjectValue")
+    @GetMapping("/setObjectValue")
     public void setObjectValue() {
         UserVO vo = new UserVO(1L, "username", "2211024378@qq.com");
         ValueOperations<String, UserVO> operations = redisTemplate.opsForValue();
@@ -47,7 +48,7 @@ public class RedisController {
         operations.set("time_1_Expired", vo, 1, TimeUnit.SECONDS);
     }
 
-    @RequestMapping("/getObjectValue")
+    @GetMapping("/getObjectValue")
     public void getObjectValue() {
         System.out.println(redisTemplate.opsForValue().get("time_not_Expired"));
         System.out.println(redisTemplate.opsForValue().get("time_1_Expired"));
@@ -57,7 +58,7 @@ public class RedisController {
      * 自动使用缓存,其中 value 的值就是缓存到 Redis 中的 key
      * @return
      */
-    @RequestMapping("/getUser")
+    @GetMapping("/getUser")
     @Cacheable(value="user-key2")
     public UserVO setUser() {
         UserVO vo = new UserVO(2L, "username", "33333333@qq.com");
