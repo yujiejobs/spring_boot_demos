@@ -1,5 +1,6 @@
 package com.san.controller;
 
+import com.san.common.aspect.Timer;
 import com.san.common.base.Message;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiModel;
@@ -25,6 +26,7 @@ public class HelloWorldController {
      *
      * @return
      */
+    @Timer
     @ApiOperation(value = "hello", notes = "输出Hello World！")
     @GetMapping("/hello")
     public String hello() {
