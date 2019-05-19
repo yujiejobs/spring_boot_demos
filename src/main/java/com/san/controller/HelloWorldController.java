@@ -1,5 +1,6 @@
 package com.san.controller;
 
+import com.san.common.base.Message;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiOperation;
@@ -16,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2019/05/13 20:27
  */
 @RestController
-@Api("HelloWorldController 接口测试")
+@Api(" 接口测试 HelloWorldController")
 public class HelloWorldController {
 
     /**
@@ -28,6 +29,13 @@ public class HelloWorldController {
     @GetMapping("/hello")
     public String hello() {
         return "Hello World！";
+    }
+
+
+    @ApiOperation(value = "international 国际化测试")
+    @GetMapping("/international")
+    public Message international() {
+        return Message.successData("Hello World！");
     }
 
 }
