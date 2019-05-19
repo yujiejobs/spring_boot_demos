@@ -134,6 +134,12 @@
 			<artifactId>dozer</artifactId>
 			<version>5.4.0</version>
 		</dependency>
+		<!-- easyexcel	-->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>easyexcel</artifactId>
+			<version>1.1.2-beta5</version>
+		</dependency>
 		<!--
 			热部署，该模块在完整的打包环境下运行的时候会被禁用。
 			如果你使用java -jar启动应用或者用一个特定的classloader启动，
