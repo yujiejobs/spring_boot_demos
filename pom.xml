@@ -26,6 +26,9 @@
 
     <modules>
         <module>spring_boot_1_init</module>
+        <module>guave</module>
+        <module>hutools</module>
+        <module>redisson</module>
     </modules>
 
     <dependencies>
