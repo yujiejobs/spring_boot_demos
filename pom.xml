@@ -29,6 +29,7 @@
         <module>guave</module>
         <module>hutools</module>
         <module>redisson</module>
+        <module>demo</module>
     </modules>
 
     <dependencies>
