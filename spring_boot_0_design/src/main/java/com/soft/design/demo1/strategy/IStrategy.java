@@ -1,4 +1,6 @@
-package com.soft.demo1;
+package com.soft.design.demo1.strategy;
+
+import com.soft.design.demo1.StrategyEnum;
 
 /**
  * 描述: 策略模式接口
@@ -13,7 +15,7 @@ public interface IStrategy {
      *
      * @return 策略枚举
      */
-    ResolveEnum gainFileType();
+    StrategyEnum getStrategy();
 
     /**
      * 处理方法

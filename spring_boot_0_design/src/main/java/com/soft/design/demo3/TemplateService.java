@@ -1,4 +1,4 @@
-package com.soft.demo3;
+package com.soft.design.demo3;
 
 import lombok.extern.slf4j.Slf4j;
 

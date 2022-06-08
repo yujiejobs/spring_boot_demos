@@ -21,6 +21,7 @@ public class EventBusCenter {
 
     /**
      * 添加观察者
+     *
      * @param obj obj
      */
     public static void register(Object obj) {
@@ -29,6 +30,7 @@ public class EventBusCenter {
 
     /**
      * 移除观察者
+     *
      * @param obj obj
      */
     public static void unregister(Object obj) {
@@ -37,6 +39,7 @@ public class EventBusCenter {
 
     /**
      * 把消息推给观察者
+     *
      * @param obj obj
      */
     public static void post(Object obj) {

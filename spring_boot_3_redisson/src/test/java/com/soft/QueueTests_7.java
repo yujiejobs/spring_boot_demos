@@ -42,7 +42,6 @@ public class QueueTests_7 {
     /**
      * 双端队列（Deque）
      * https://github.com/redisson/redisson/wiki/7.-%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E5%90%88#79-%E5%8F%8C%E7%AB%AF%E9%98%9F%E5%88%97deque
-     *
      */
     @Test
     void deque_7_9() {
@@ -59,15 +58,15 @@ public class QueueTests_7 {
      */
     @Test
     void delayed_queue_7_15() {
-        RQueue<String> queue  = redissonClient.getQueue("delayedQueue_7_15");
+        RQueue<String> queue = redissonClient.getQueue("delayedQueue_7_15");
         RDelayedQueue<String> delayedQueue = redissonClient.getDelayedQueue(queue);
         // 10秒钟以后将消息发送到指定队列
         delayedQueue.offer("msg1", 10, TimeUnit.SECONDS);
         // 一分钟以后将消息发送到指定队列
         delayedQueue.offer("msg2", 1, TimeUnit.MINUTES);
-        while (true){
+        while (true) {
             String poll = queue.poll();
-            if(StrUtil.isNotBlank(poll)){
+            if (StrUtil.isNotBlank(poll)) {
                 System.out.println(poll);
             }
 

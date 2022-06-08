@@ -1,5 +1,6 @@
-package com.soft.demo1;
+package com.soft.design.demo1.strategy;
 
+import com.soft.design.demo1.StrategyEnum;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
@@ -11,11 +12,11 @@ import org.springframework.stereotype.Component;
  */
 @Slf4j
 @Component
-public class AResolve implements IStrategy {
+public class AStrategy implements IStrategy {
 
     @Override
-    public ResolveEnum gainFileType() {
-        return ResolveEnum.A_RESOLVE;
+    public StrategyEnum getStrategy() {
+        return StrategyEnum.A_RESOLVE;
     }
 
     @Override

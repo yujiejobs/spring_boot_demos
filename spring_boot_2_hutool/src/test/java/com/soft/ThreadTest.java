@@ -35,10 +35,11 @@ public class ThreadTest {
                 excTask();
             });
         }
-        System.out.println("执行时间"+ timer.interval());
+        System.out.println("执行时间" + timer.interval());
         // 执行时间1198 执行时间18992
 
     }
+
     private void excTask() {
         ThreadUtil.sleep(100);
     }

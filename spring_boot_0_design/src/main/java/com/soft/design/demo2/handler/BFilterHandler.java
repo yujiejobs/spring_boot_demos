@@ -1,20 +1,20 @@
-package com.soft.demo2;
+package com.soft.design.demo2.handler;
 
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 /**
- * 描述: 参数校验对象
+ * 描述: FilterHandlerB
  *
  * @author yujie
- * @date 2022/6/1 14:04
+ * @date 2022/6/7 16:19
  */
 @Component
-@Order(1)
-public class CheckParamFilterObject extends AbstractHandler {
+@Order(2)
+public class BFilterHandler extends AbstractHandler {
 
     @Override
     public void doFilter(String request, String response) {
-        System.out.println("参数校验对象");
+        System.out.println("BFilterHandler");
     }
 }

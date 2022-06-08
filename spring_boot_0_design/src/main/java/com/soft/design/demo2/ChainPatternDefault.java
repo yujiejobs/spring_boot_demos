@@ -1,5 +1,6 @@
-package com.soft.demo2;
+package com.soft.design.demo2;
 
+import com.soft.design.demo2.handler.AbstractHandler;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

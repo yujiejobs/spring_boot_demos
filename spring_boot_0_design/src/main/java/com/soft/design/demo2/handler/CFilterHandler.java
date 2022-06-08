@@ -1,20 +1,21 @@
-package com.soft.demo2;
+package com.soft.design.demo2.handler;
 
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 /**
- * 描述: 安全校验对象
+ * 描述: FilterC
  *
  * @author yujie
- * @date 2022/6/1 14:07
+ * @date 2022/6/7 16:18
  */
 @Component
-@Order(2)
-public class CheckSecurityFilterObject extends AbstractHandler {
+@Order(3)
+public class CFilterHandler extends AbstractHandler {
 
     @Override
     public void doFilter(String request, String response) {
-        System.out.println("安全校验对象");
+        System.out.println("C");
     }
+
 }
