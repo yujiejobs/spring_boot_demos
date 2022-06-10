@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 /**
- * 描述: 策略模式案例
+ * 描述: 责任链模式案例
  *
  * @author yujie
  * @date 2022/6/1 13:57
