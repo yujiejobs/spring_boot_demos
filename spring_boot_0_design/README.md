@@ -10,6 +10,7 @@
 |[责任链模式](src/main/java/com/soft/design/demo2/)|[执行入口](src/test/java/com/soft/design/demo2)|
 |[模板方法模式](src/main/java/com/soft/design/demo3/)|[执行入口](src/test/java/com/soft/design/demo3)|
 |[代理模式](src/main/java/com/soft/design/demo3/)|[执行入口](src/test/java/com/soft/design/demo4)|
+|[建造者模式](src/main/java/com/soft/design/demo3/)|[执行入口](src/test/java/com/soft/design/demo5)|
 
 
 
