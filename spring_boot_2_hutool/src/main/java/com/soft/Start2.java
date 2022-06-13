@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBoot2HutoolApplication {
+public class Start2 {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBoot2HutoolApplication.class, args);
+        SpringApplication.run(Start2.class, args);
     }
 
 }
