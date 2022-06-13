@@ -20,7 +20,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <spring.boot.version>2.6.2</spring.boot.version>
         <mysql.version>8.0.16</mysql.version>
-        <hutool.version>5.8.1</hutool.version>
+        <hutool.version>5.8.2</hutool.version>
         <guava.version>31.1-jre</guava.version>
     </properties>
 
@@ -31,6 +31,7 @@
         <module>spring_boot_3_redisson</module>
         <module>spring_boot_4_mq</module>
         <module>spring_boot_5_guava</module>
+        <module>spring_boot_6_tlog</module>
     </modules>
 
     <dependencies>
