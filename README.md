@@ -8,14 +8,14 @@
 
 #### 模块目录
 
-|模块|模块自诉|
+|描述|模块|模块自诉|
 |-------|-------|
-|[设计模式合集 ](spring_boot_0_design)|[模块自诉 ](spring_boot_0_design/README.md)|
-|[SpringBoot初始脚手架 ](spring_boot_1_init)|[模块自诉 ](spring_boot_0_design/README.md)|
-|[一款小而全的工具库Hutool ](spring_boot_2_hutool)|[模块自诉 ](spring_boot_0_design/README.md)|
-|[分布式Redisson框架 ](spring_boot_3_redisson)|[模块自诉 ](spring_boot_0_design/README.md)|
-|[MQ消息队列合集 ](spring_boot_5_guava)|[模块自诉 ](spring_boot_0_design/README.md)|
-|[轻量级的分布式日志标记追踪神器 ](spring_boot_6_tlog)|[模块自诉 ](spring_boot_0_design/README.md)|
+|[设计模式合集 ](spring_boot_0_design)|spring_boot_0_design|[模块自诉 ](spring_boot_0_design/README.md)|
+|[SpringBoot初始脚手架 ](spring_boot_1_init)|spring_boot_0_design|[模块自诉 ](spring_boot_0_design/README.md)|
+|[一款小而全的工具库Hutool ](spring_boot_2_hutool)|spring_boot_0_design|[模块自诉 ](spring_boot_0_design/README.md)|
+|[分布式Redisson框架 ](spring_boot_3_redisson)|spring_boot_0_design|[模块自诉 ](spring_boot_0_design/README.md)|
+|[MQ消息队列合集 ](spring_boot_5_guava)|spring_boot_0_design|[模块自诉 ](spring_boot_0_design/README.md)|
+|[轻量级的分布式日志标记追踪神器 ](spring_boot_6_tlog)|spring_boot_0_design|[模块自诉 ](spring_boot_0_design/README.md)|
 
 #### 参与贡献
 

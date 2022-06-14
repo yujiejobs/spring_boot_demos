@@ -5,13 +5,14 @@
 ### 项目目录
 
 |模块|简介|文章|
-|-------|-------|-------|
-|[spring_boot_0_design](/spring_boot_0_design)|设计模式案例|
-|[spring_boot_1_init](/spring_boot_1_init)|SpringBoot初始脚手架|
-|[spring_boot_2_hutool](/spring_boot_2_hutool)|小而全的Java工具类库|https://www.hutool.cn
-|[spring_boot_3_redisson](/spring_boot_3_redisson)|分布式Redis操作|
-|[spring_boot_4_mq](/spring_boot_4_mq)|MQ案例|
-|[spring_boot_5_guava](/spring_boot_5_guava)|Google guava工具类库|
+|模块|模块自诉|
+|-------|-------|
+|[设计模式合集 ](spring_boot_0_design)|[模块自诉 ](spring_boot_0_design/README.md)|
+|[SpringBoot初始脚手架 ](spring_boot_1_init)|[模块自诉 ](spring_boot_0_design/README.md)|
+|[一款小而全的工具库Hutool ](spring_boot_2_hutool)|[模块自诉 ](spring_boot_0_design/README.md)|
+|[分布式Redisson框架 ](spring_boot_3_redisson)|[模块自诉 ](spring_boot_0_design/README.md)|
+|[MQ消息队列合集 ](spring_boot_5_guava)|[模块自诉 ](spring_boot_0_design/README.md)|
+|[轻量级的分布式日志标记追踪神器 ](spring_boot_6_tlog)|[模块自诉 ](spring_boot_0_design/README.md)|
 
 ### Stargazers over time
 
