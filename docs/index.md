@@ -12,7 +12,7 @@
 |[分布式Redisson框架 ](../spring_boot_3_redisson)|../spring_boot_3_redisson|[模块自诉 ](../spring_boot_3_redisson/README.md)|
 |[MQ消息队列合集 ](../spring_boot_5_guava)|../spring_boot_5_guava|[模块自诉 ](../spring_boot_5_guava/README.md)|
 |[轻量级的分布式日志标记追踪神器 ](../spring_boot_6_tlog)|../spring_boot_6_tlog|[模块自诉 ](../spring_boot_6_tlog/README.md)|
-|[SpringBoot-mongodb ](../spring_boot_8_mongodb)|../spring_boot_7_mongodb|[模块自诉 ](../spring_boot_8_mongodb/README.md)|
+|[SpringBoot-mongodb ](../spring_boot_8_mongodb)|../spring_boot_8_mongodb|[模块自诉 ](../spring_boot_8_mongodb/README.md)|
 
 ### Stargazers over time
 
