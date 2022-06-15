@@ -1,7 +1,8 @@
 package com.soft;
 
 import cn.hutool.core.thread.ThreadUtil;
-import com.yomahub.tlog.core.annotation.TLogAspect;
+import cn.hutool.core.util.IdUtil;
+import com.yomahub.tlog.core.thread.TLogInheritableTask;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -31,14 +32,20 @@ public class Start6 {
         log.info("这是接口进来打出来的日志！ ");
     }
 
-
-    @TLogAspect({"id"})
     @GetMapping("log-id")
-    public void demo1(String id){
-        log.info("这是第一条日志");
-        log.info("这是第二条日志");
-        log.info("这是第三条日志");
-        ThreadUtil.execute(() -> log.info("这是异步日志"));
+    public void demo1(){
+        String id = IdUtil.fastSimpleUUID();
+        log.info("这是同步第一条日志 [{}]",id);
+        ThreadUtil.newThread(new TLogInheritableTask() {
+            @Override
+            public void runTask() {
+                log.info("这是异步日志 [{}]！！！！",id);
+            }
+        }, "TLogInheritableTask-Name").start();
+        ThreadUtil.sleep(1000);
+        log.info("这是同步第二条日志 [{}]",id);
+        log.info("这是同步第三条日志 [{}]",id);
+
     }
 
 }

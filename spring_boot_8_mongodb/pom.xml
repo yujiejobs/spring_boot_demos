@@ -7,10 +7,10 @@
         <artifactId>spring_boot_demos</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>spring_boot_0_design</artifactId>
+    <artifactId>spring_boot_8_mongodb</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring_boot_0_design</name>
-    <description>spring_boot_0_design</description>
+    <name>spring_boot_8_mongodb</name>
+    <description>spring_boot_8_mongodb</description>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -35,6 +35,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
         </dependency>
     </dependencies>
 

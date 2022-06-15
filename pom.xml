@@ -32,6 +32,7 @@
         <module>spring_boot_4_mq</module>
         <module>spring_boot_5_guava</module>
         <module>spring_boot_6_tlog</module>
+        <module>spring_boot_8_mongodb</module>
     </modules>
 
     <dependencies>
