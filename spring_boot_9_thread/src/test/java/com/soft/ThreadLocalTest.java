@@ -1,10 +1,8 @@
 package com.soft;
 
 import cn.hutool.core.lang.Console;
-import cn.hutool.core.util.StrUtil;
-import cn.hutool.log.Log;
 
-public class test {
+public class ThreadLocalTest {
 
     static ThreadLocal<Object> local = new ThreadLocal<>();
 
