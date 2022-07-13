@@ -1,4 +1,4 @@
-package com.soft.latch;
+package com.soft.semaphore;
 
 import cn.hutool.core.lang.Console;
 import cn.hutool.core.thread.ThreadUtil;

@@ -34,6 +34,7 @@
         <module>spring_boot_6_tlog</module>
         <module>spring_boot_8_mongodb</module>
         <module>spring_boot_9_thread</module>
+        <module>spring_boot_10_jvm</module>
     </modules>
 
     <dependencies>
