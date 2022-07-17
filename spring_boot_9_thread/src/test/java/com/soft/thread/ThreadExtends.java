@@ -1,6 +1,12 @@
 package com.soft.thread;
 
 
+/**
+ * 描述: 继承 Thread 方式创建线程
+ *
+ * @author yujie
+ * @date 2022/7/17 11:02
+ */
 public class ThreadExtends extends Thread {
 
     @Override

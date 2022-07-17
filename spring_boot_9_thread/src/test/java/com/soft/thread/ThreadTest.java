@@ -1,10 +1,8 @@
 package com.soft.thread;
 
-import com.sun.org.apache.bcel.internal.generic.NEW;
 import org.junit.jupiter.api.Test;
 
 import java.util.concurrent.ExecutionException;
-import java.util.concurrent.Future;
 import java.util.concurrent.FutureTask;
 
 public class ThreadTest {
