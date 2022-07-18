@@ -61,7 +61,7 @@ class Start8Tests {
         // 演示简单查询
         LogMongoModel search = new LogMongoModel();
         search.setId(1536948750163644419L);
-        List<LogMongoModel> fileLineList = logMongoModelRepository.findAll(Example.of(search),Sort.by("createTime").descending());
+        List<LogMongoModel> fileLineList = logMongoModelRepository.findAll(Example.of(search), Sort.by("createTime").descending());
         log.info("查询到的参数 fileLineList {} ", JSONUtil.toJsonStr(fileLineList));
     }
 
@@ -77,10 +77,10 @@ class Start8Tests {
     @Test
     void findById() {
         Optional<LogMongoModel> opt = logMongoModelRepository.findById(1L);
-        if(opt.isPresent()){
+        if (opt.isPresent()) {
             LogMongoModel logMongoModel = opt.get();
             log.info("查询到的参数 {} ", JSONUtil.toJsonStr(logMongoModel));
-        }else {
+        } else {
             log.info("查询数据为空！");
         }
     }

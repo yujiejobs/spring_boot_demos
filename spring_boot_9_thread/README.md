@@ -1,6 +1,6 @@
 ## JAVA多线程实现方式
 
-[官方文档](https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html) 
+[官方文档](https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html)
 
 通常我们可以分为两类，Oracle也是这么说的
 准确的讲，创建线程只有一种方式那就是构造Thread类，而实现线程的执行单元有两种方式

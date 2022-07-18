@@ -21,10 +21,10 @@ public class TemplateAServiceImpl extends TemplateService {
     }
 
     public static void main(String[] args) {
-        List<Integer> prizeIdDtoList = Lists.newArrayList(5,6);
+        List<Integer> prizeIdDtoList = Lists.newArrayList(5, 6);
         // 若编辑判断交集
         boolean update = Boolean.TRUE;
-        List<Integer> prizeIdDbList = Lists.newArrayList(1, 2, 3,4,5);
+        List<Integer> prizeIdDbList = Lists.newArrayList(1, 2, 3, 4, 5);
         List<Integer> existList = prizeIdDbList.stream().filter(prizeIdDtoList::contains).collect(Collectors.toList());
         prizeIdDtoList.addAll(existList);
 

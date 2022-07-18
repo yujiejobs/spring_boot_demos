@@ -57,7 +57,7 @@ public class SemaphoreTest {
 
 
         System.out.println("主线程结束");
-        while (true){
+        while (true) {
 
         }
     }

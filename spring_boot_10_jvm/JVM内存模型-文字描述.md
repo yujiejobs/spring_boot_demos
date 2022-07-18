@@ -52,7 +52,4 @@ Boolean、byte、char、short、int、float、long、double、对象引用类型
 直接内存不属于虚拟内存区域，是一种基于通道与缓冲区的IO方式，可以使用本地函数直接分配堆外内存，在堆中存储引用的外部内存地址，
 通过引用完成对直接引用内存的操作，1.4之后提供的NIO显著提高效率，避免了堆内存与Native内存的来回复制操作，不受虚拟机内存控制，会抛出OUtOfMemory异常。
 
-
-
-
 [JVM参考资料](https://mp.weixin.qq.com/s?__biz=MzU0MjYwNzEzOQ==&mid=2247484128&idx=1&sn=429562cde6081d665ef2219416f9775f&chksm=fb1950accc6ed9bad8429ce09ca17a681dd4060a2963d1eebf645d7b0fc5c09033f325c6155f#rd)

@@ -4,7 +4,6 @@ import cn.hutool.core.lang.Console;
 import cn.hutool.core.thread.ThreadUtil;
 
 import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.Semaphore;
 
 /**
  * CountDownLatch 表示计数器，可以给 CountDownLatch 设置一个数字，一个线程调用 CountDownLatch 的 await() 将会阻塞
@@ -39,7 +38,7 @@ public class LatchTest {
         countDownLatch.countDown();
         countDownLatch.countDown();
         System.out.println("主线程结束");
-        while (true){
+        while (true) {
 
         }
     }

@@ -33,18 +33,18 @@ public class Start6 {
     }
 
     @GetMapping("log-id")
-    public void demo1(){
+    public void demo1() {
         String id = IdUtil.fastSimpleUUID();
-        log.info("这是同步第一条日志 [{}]",id);
+        log.info("这是同步第一条日志 [{}]", id);
         ThreadUtil.newThread(new TLogInheritableTask() {
             @Override
             public void runTask() {
-                log.info("这是异步日志 [{}]！！！！",id);
+                log.info("这是异步日志 [{}]！！！！", id);
             }
         }, "TLogInheritableTask-Name").start();
         ThreadUtil.sleep(1000);
-        log.info("这是同步第二条日志 [{}]",id);
-        log.info("这是同步第三条日志 [{}]",id);
+        log.info("这是同步第二条日志 [{}]", id);
+        log.info("这是同步第三条日志 [{}]", id);
 
     }
 

@@ -29,7 +29,7 @@ public class StrategyUseService implements ApplicationContextAware {
      * 获取策略服务
      *
      * @param strategyEnum 策略枚举
-     * @param objectParam 参数
+     * @param objectParam  参数
      */
     public void use(StrategyEnum strategyEnum, Object objectParam) {
         // 获取需要的策略服务

@@ -1,7 +1,6 @@
 package com.soft.pool;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.concurrent.*;
 
@@ -77,7 +76,7 @@ public class ThreadPoolTests {
                 System.out.println(Thread.currentThread().getName());
             });
         }
-        while (true){
+        while (true) {
 
         }
     }
