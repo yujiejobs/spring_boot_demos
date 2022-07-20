@@ -14,6 +14,12 @@ import java.util.List;
  */
 public interface LogMongoModelRepository extends MongoRepository<LogMongoModel, Long> {
 
+    /**
+     * findAllByContextLike
+     *
+     * @param context context
+     * @return List<LogMongoModel>
+     */
     List<LogMongoModel> findAllByContextLike(String context);
 
 }

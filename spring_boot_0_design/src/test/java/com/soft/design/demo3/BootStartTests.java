@@ -18,11 +18,11 @@ class BootStartTests {
 
     @Test
     void demo3() {
-        TemplateAServiceImpl aService = new TemplateAServiceImpl();
+        BaseTemplateAServiceImpl aService = new BaseTemplateAServiceImpl();
         aService.handler("aService");
         aService.step();
 
-        TemplateBServiceImpl bService = new TemplateBServiceImpl();
+        BaseTemplateBServiceImpl bService = new BaseTemplateBServiceImpl();
         bService.handler("bService");
         bService.step();
     }

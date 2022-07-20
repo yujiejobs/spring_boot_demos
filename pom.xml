@@ -36,9 +36,7 @@
         <module>spring_boot_8_mongodb</module>
         <module>spring_boot_9_thread</module>
         <module>spring_boot_10_jvm</module>
-        <module>spring_boot_11_dubbo_provider</module>
-        <module>spring_boot_12_dubbo_consumer</module>
-        <module>spring_boot_13_dubbo_interface</module>
+        <module>spring_boot_11_dubbo</module>
     </modules>
 
     <dependencies>
