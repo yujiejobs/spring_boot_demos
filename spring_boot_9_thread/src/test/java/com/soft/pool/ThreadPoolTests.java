@@ -1,5 +1,6 @@
 package com.soft.pool;
 
+import cn.hutool.core.lang.Console;
 import org.junit.jupiter.api.Test;
 
 import java.util.concurrent.*;
@@ -51,15 +52,59 @@ public class ThreadPoolTests {
      */
     BlockingQueue<Runnable> workQueue;
 
+    /**
+     * implements RejectedExecutionHandler
+     * <p>
+     * AbortPolicy: 直接抛出异常，阻止系统正常运行。
+     * <p>
+     * CallerRunsPolicy：该策略直接将任务交给调用者线程运行性能极有可能会急剧下降。
+     * <p>
+     * DiscardOldestPolicy：丢弃最老的一个请求，也就是即将被执行的一个任务，并尝试再次提交当前任务。
+     * <p>
+     * DiscardPolicy：该策略默默地丢弃无法处理的任务，不予任何处理。如果允许任务丢失，这是最好的一种方案。
+     */
+    RejectedExecutionHandler rejectedExecutionHandler;
 
     @Test
-    void threadPoolExecutor() {
+    void arrayBlockingQueue() {
+        // 1.使用有界阻塞队列
         workQueue = new ArrayBlockingQueue<>(10);
+        rejectedExecutionHandler = new ThreadPoolExecutor.AbortPolicy();
         ThreadPoolExecutor executor = new ThreadPoolExecutor(corePoolSize, maximumPoolSize, keepAliveTime,
-                timeUnit, workQueue, new ThreadPoolExecutor.AbortPolicy());
-        executor.execute(() -> {
-            System.out.println("这是一个Runnable方法");
-        });
+                timeUnit, workQueue, rejectedExecutionHandler);
+        // 2.批量提交任务
+        for (int i = 0; i < 200; i++) {
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            int finalI = i;
+            executor.execute(() -> {
+                System.out.println("这是一个Runnable方法" + finalI);
+            });
+        }
+    }
+
+    @Test
+    void linkedBlockingQueue() {
+        // 1.使用有界阻塞队列
+        workQueue = new ArrayBlockingQueue<>(10);
+        rejectedExecutionHandler = new ThreadPoolExecutor.DiscardOldestPolicy();
+        ThreadPoolExecutor executor = new ThreadPoolExecutor(corePoolSize, maximumPoolSize, keepAliveTime,
+                timeUnit, workQueue, rejectedExecutionHandler);
+        // 2.批量提交任务
+        for (int i = 0; i < 200; i++) {
+//            try {
+//                Thread.sleep(100);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+            int finalI = i;
+            executor.execute(() -> {
+                System.out.println("这是一个Runnable方法" + finalI + " 线程" + Thread.currentThread().getName());
+            });
+        }
     }
 
 
