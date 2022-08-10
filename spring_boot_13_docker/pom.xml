@@ -7,10 +7,10 @@
         <artifactId>spring_boot_demos</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>spring_boot_4_mq</artifactId>
+    <artifactId>spring_boot_13_docker</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring_boot_4_mq</name>
-    <description>spring_boot_4_mq</description>
+    <name>spring_boot_13_docker</name>
+    <description>spring_boot_13_docker</description>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -37,8 +37,8 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-amqp</artifactId>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-mongodb</artifactId>
         </dependency>
     </dependencies>
 

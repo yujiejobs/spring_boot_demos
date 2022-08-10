@@ -38,6 +38,7 @@
         <module>spring_boot_10_jvm</module>
         <module>spring_boot_11_dubbo</module>
         <module>spring_boot_12_collection</module>
+        <module>spring_boot_13_docker</module>
     </modules>
 
     <dependencies>
