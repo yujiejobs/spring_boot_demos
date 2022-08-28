@@ -8,6 +8,7 @@ class Start9Tests {
 
     @Test
     void contextLoads() {
+        Thread thread = new Thread();
     }
 
 }
