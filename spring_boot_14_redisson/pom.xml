@@ -7,10 +7,10 @@
         <artifactId>spring_boot_demos</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>spring_boot_12_collection </artifactId>
+    <artifactId>spring_boot_14_redisson</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring_boot_12_collection </name>
-    <description>spring_boot_12_collection </description>
+    <name>spring_boot_14_redisson</name>
+    <description>spring_boot_14_redisson</description>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -35,6 +35,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.redisson/redisson -->
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson</artifactId>
+            <version>3.15.5</version>
         </dependency>
 
     </dependencies>
