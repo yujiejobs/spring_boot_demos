@@ -1,4 +1,6 @@
-#### 介绍
+## [感谢JetBrains提供的开源开发许可证](https://jb.gg/OpenSourceSupport)
+
+## 介绍
 
 一线开发者使用的工具库以及框架教程案例，包含springboot脚手架以及集成常用框架、类库的原理解释和使用心得，项目有较为详细的文档
 
@@ -6,7 +8,7 @@
 
 [在线文档 ](https://yujiejobs.github.io/spring_boot_demos/)
 
-#### 模块目录
+## 模块目录
 
 | 描述                                       | 模块                        | 模块自诉                                         |
 |------------------------------------------|---------------------------|----------------------------------------------|
@@ -24,7 +26,7 @@
 | [Docker ](spring_boot_13_docker)         | spring_boot_13_docker     | [模块自诉 ](spring_boot_13_docker/README.md)     |
 | [Redisson ](spring_boot_14_redisson)     | spring_boot_14_redisson   | [模块自诉 ](spring_boot_14_redisson/README.md)   |
 
-#### 中间件官网文档
+## 中间件官网文档
 
 | 描述                                                                                                | 介绍                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -35,5 +37,4 @@
 | [Redis   ](https://redis.com.cn/)                                                                 | Redis 是一个开源（BSD许可）的，内存中的数据结构存储系统，它可以用作数据库、缓存和消息中间件. 它支持多种类型的数据结构，如 字符串（strings）， 散列（hashes）， 列表（lists）， 集合（sets）， 有序集合（sorted sets） 与范围查询， bitmaps， hyperloglogs 和 地理空间（geospatial） 索引半径查询. Redis 内置了 复制（replication）， LUA脚本（Lua scripting）， LRU驱动事件（LRU eviction）， 事务（transactions） 和不同级别的 磁盘持久化（persistence）， 并通过 Redis哨兵（Sentinel） 和自动 分区（Cluster）提供高可用性（high availability） |
 | [Redisson  ](https://github.com/redisson/redisson/wiki/%E7%9B%AE%E5%BD%95)                        | Redisson是一个在Redis的基础上实现的Java驻内存数据网格（In-Memory Data Grid）。它不仅提供了一系列的分布式的Java常用对象，还提供了许多分布式服务                                                                                                                                                                                                                                                                                    |
 | [RocketMQ  ](https://github.com/apache/rocketmq/tree/master/docs/cn)                              | 消息队列                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                                                                                                                     |
-
 
