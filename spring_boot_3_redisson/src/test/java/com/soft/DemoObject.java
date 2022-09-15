@@ -22,7 +22,7 @@ public class DemoObject implements Serializable {
     }
 
     @Override
-    public String toString() {
+    public String toString(Object) {
         return "SomeObject{" +
                 "name='" + name + '\'' +
                 '}';
