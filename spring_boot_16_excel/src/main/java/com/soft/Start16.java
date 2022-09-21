@@ -13,7 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Start16 {
 
     public static void main(String[] args) {
-        SpringApplication.run(Start1.class, args);
+        SpringApplication.run(Start16.class, args);
     }
 
 }
