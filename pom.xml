@@ -42,6 +42,7 @@
         <module>spring_boot_14_redisson</module>
         <module>spring_boot_15_limit</module>
         <module>spring_boot_16_excel</module>
+        <module>spring_boot_17_mvel</module>
     </modules>
 
     <dependencies>
