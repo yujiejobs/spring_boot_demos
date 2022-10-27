@@ -1,14 +1,19 @@
 package com.soft;
 
-import cn.hutool.core.date.DateUtil;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * 描述: SpringBoot初始脚手架
+ *
+ * @author yujie
+ * @date 2022/1/5 20:01
+ */
 @SpringBootApplication
-public class Start2 {
+public class Start1 {
 
     public static void main(String[] args) {
-        SpringApplication.run(Start2.class, args);
+        SpringApplication.run(Start1.class, args);
     }
 
 }
