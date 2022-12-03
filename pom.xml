@@ -43,6 +43,7 @@
         <module>spring_boot_15_limit</module>
         <module>spring_boot_16_excel</module>
         <module>spring_boot_17_mvel</module>
+        <module>spring_boot_18_stream</module>
     </modules>
 
     <dependencies>
