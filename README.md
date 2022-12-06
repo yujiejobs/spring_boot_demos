@@ -25,8 +25,10 @@
 | [集合 ](spring_boot_12_collection)         | spring_boot_12_collection | [模块自诉 ](spring_boot_12_collection/README.md) |
 | [Docker ](spring_boot_13_docker)         | spring_boot_13_docker     | [模块自诉 ](spring_boot_13_docker/README.md)     |
 | [Redisson ](spring_boot_14_redisson)     | spring_boot_14_redisson   | [模块自诉 ](spring_boot_14_redisson/README.md)   |
-| [Limit ](spring_boot_15_limit)           | spring_boot_14_redisson   | [模块自诉 ](spring_boot_15_limit/README.md)      |
-| [Excel ](spring_boot_16_excel)           | spring_boot_14_redisson   | [模块自诉 ](spring_boot_16_excel/README.md)      |
+| [Limit ](spring_boot_15_limit)           | spring_boot_15_limit      | [模块自诉 ](spring_boot_15_limit/README.md)      |
+| [Excel ](spring_boot_16_excel)           | spring_boot_16_excel      | [模块自诉 ](spring_boot_16_excel/README.md)      |
+| [mvel表达式 ](spring_boot_17_mvel)          | spring_boot_17_mvel       | [模块自诉 ](spring_boot_17_mvel/README.md)       |
+| [Java 8 Stream](spring_boot_18_stream)   | spring_boot_18_stream     | [模块自诉 ](spring_boot_18_stream/README.md)     |
 
 ## 中间件官网文档
 
