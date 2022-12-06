@@ -1,4 +1,4 @@
-package spring_boot_15_limit.src.main.java.com.soft;
+package com.soft;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,10 +10,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @date 2022/1/5 20:01
  */
 @SpringBootApplication
-public class Start1 {
+public class Start13 {
 
     public static void main(String[] args) {
-        SpringApplication.run(Start1.class, args);
+        SpringApplication.run(Start13.class, args);
     }
 
 }

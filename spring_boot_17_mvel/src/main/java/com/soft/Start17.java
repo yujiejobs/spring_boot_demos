@@ -10,10 +10,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @date 2022/1/5 20:01
  */
 @SpringBootApplication
-public class Start1 {
+public class Start17 {
 
     public static void main(String[] args) {
-        SpringApplication.run(Start1.class, args);
+        SpringApplication.run(Start17.class, args);
     }
 
 }
