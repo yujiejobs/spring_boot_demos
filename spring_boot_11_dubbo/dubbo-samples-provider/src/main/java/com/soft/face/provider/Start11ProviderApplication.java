@@ -15,37 +15,21 @@
  * limitations under the License.
  */
 
-package com.soft.consumer;
+package com.soft.face.provider;
 
-import com.soft.face.DemoService;
-import org.apache.dubbo.config.annotation.DubboReference;
+
 import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.stereotype.Service;
+
+import java.util.concurrent.CountDownLatch;
 
 @SpringBootApplication
-@Service
 @EnableDubbo
-public class ConsumerApplication {
-
-    @DubboReference
-    private DemoService demoService;
-
-    public static void main(String[] args) throws InterruptedException {
-
-        ConfigurableApplicationContext context = SpringApplication.run(ConsumerApplication.class, args);
-        ConsumerApplication application = context.getBean(ConsumerApplication.class);
-        String result = application.doSayHello("world");
-        System.out.println("result: " + result);
-        while (true) {
-            Thread.sleep(3000);
-            System.out.println("result: " + application.doSayHello("world"));
-        }
-    }
-
-    public String doSayHello(String name) {
-        return demoService.sayHello(name);
+public class Start11ProviderApplication {
+    public static void main(String[] args) throws Exception {
+        SpringApplication.run(Start11ProviderApplication.class, args);
+        System.out.println("dubbo service started");
+        new CountDownLatch(1).await();
     }
 }
