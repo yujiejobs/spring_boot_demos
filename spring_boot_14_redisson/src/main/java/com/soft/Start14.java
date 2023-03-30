@@ -38,7 +38,7 @@ public class Start14 {
      */
     @ResponseBody
     @GetMapping("test-lock")
-    public String TestLock() {
+    public String testLock() {
         // 1.获取锁，只要锁的名字一样，获取到的锁就是同一把锁。
         RLock lock = redissonClient.getLock("lock");
         // 2.加锁
