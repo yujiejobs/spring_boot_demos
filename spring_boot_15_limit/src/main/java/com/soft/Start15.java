@@ -1,4 +1,4 @@
-package spring_boot_15_limit.src.main.java.com.soft;
+package com.soft;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
