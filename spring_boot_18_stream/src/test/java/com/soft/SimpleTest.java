@@ -1,8 +1,5 @@
 package com.soft;
 
-import org.assertj.core.util.Lists;
-
-import java.util.ArrayList;
 import java.util.stream.Stream;
 
 /**
