@@ -1,6 +1,5 @@
 package com.soft.pool;
 
-import cn.hutool.core.lang.Console;
 import org.junit.jupiter.api.Test;
 
 import java.util.concurrent.*;
