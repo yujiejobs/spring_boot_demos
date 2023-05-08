@@ -25,11 +25,13 @@
 局部变量表，是一种程序运行数据模型，存放了编译期可知的各种数据类型例如：
 
 Boolean、byte、char、short、int、float、long、double、对象引用类型(对象内存地址变量，指针或句柄)，程序运行时
-根据局部变量表分配栈帧空间大小，在运行中，大小是不变的异常类型：stackOverFlowError 线程请求栈深度大于虚拟机允许深度 OutOfMemory 内存空间耗尽无法进行扩展。
+根据局部变量表分配栈帧空间大小，在运行中，大小是不变的异常类型：stackOverFlowError 线程请求栈深度大于虚拟机允许深度
+OutOfMemory 内存空间耗尽无法进行扩展。
 
 3. 本地方法栈
 
-与虚拟机栈类似，虚拟机栈为Java程序服务，本地方法栈支持虚拟机的运行服务，具体实现由虚拟机厂商决定，也会抛出 stackOverFlowError、OutOfMemory异常。
+与虚拟机栈类似，虚拟机栈为Java程序服务，本地方法栈支持虚拟机的运行服务，具体实现由虚拟机厂商决定，也会抛出
+stackOverFlowError、OutOfMemory异常。
 
 4. 堆
 
