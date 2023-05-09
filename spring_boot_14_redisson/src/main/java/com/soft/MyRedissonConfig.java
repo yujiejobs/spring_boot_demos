@@ -12,10 +12,11 @@ import java.io.IOException;
 public class MyRedissonConfig {
     /**
      * 对 Redisson 的使用都是通过 RedissonClient 对象
+     *
      * @return
      * @throws IOException
      */
-    @Bean(destroyMethod="shutdown") // 服务停止后调用 shutdown 方法。
+    @Bean(destroyMethod = "shutdown") // 服务停止后调用 shutdown 方法。
     public RedissonClient redisson() throws IOException {
         // 1.创建配置
         Config config = new Config();
