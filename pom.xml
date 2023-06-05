@@ -44,6 +44,7 @@
         <module>spring_boot_16_excel</module>
         <module>spring_boot_17_mvel</module>
         <module>spring_boot_18_stream</module>
+        <module>spring_boot_19_groovy</module>
     </modules>
 
     <dependencies>

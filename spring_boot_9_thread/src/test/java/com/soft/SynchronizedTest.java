@@ -8,7 +8,7 @@ public class SynchronizedTest {
 
     private void runTest() {
         int a = 1;
-        synchronized (this){
+        synchronized (this) {
             System.out.printf(String.valueOf(a));
         }
     }
