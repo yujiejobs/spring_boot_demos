@@ -21,7 +21,7 @@
         <spring.boot.version>2.7.0</spring.boot.version>
         <mysql.version>8.0.28</mysql.version>
         <hutool.version>5.8.2</hutool.version>
-        <guava.version>31.1-jre</guava.version>
+        <guava.version>32.0.0-jre</guava.version>
     </properties>
 
     <modules>
