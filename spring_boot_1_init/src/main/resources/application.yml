@@ -1,2 +1,5 @@
 server:
   port: 8888
+envGroupSwitchForMq: 1
+dubbo:
+  group: 111111
