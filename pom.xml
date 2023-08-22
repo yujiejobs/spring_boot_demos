@@ -45,6 +45,7 @@
         <module>spring_boot_17_mvel</module>
         <module>spring_boot_18_stream</module>
         <module>spring_boot_19_groovy</module>
+        <module>spring_boot_20_spring</module>
     </modules>
 
     <dependencies>
