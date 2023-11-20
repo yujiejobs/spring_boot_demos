@@ -35,7 +35,7 @@ public class LatchTest {
         });
 
         countDownLatch.countDown();
-        countDownLatch.countDown();
+//        countDownLatch.countDown();
         countDownLatch.countDown();
         System.out.println("主线程结束");
         while (true) {
