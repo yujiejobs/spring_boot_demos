@@ -39,7 +39,7 @@
         <module>spring_boot_11_dubbo</module>
         <module>spring_boot_12_collection</module>
         <module>spring_boot_13_docker</module>
-        <module>spring_boot_14_redisson</module>
+        <module>spring_boot_14_redis</module>
         <module>spring_boot_15_limit</module>
         <module>spring_boot_16_excel</module>
         <module>spring_boot_17_mvel</module>
