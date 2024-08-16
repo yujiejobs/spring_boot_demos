@@ -1,4 +1,4 @@
-package com.soft.guava;
+package com.soft.guava.event;
 
 /**
  * 描述: EventBusDemoTest

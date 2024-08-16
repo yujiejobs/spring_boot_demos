@@ -1,4 +1,4 @@
-package com.soft.guava;
+package com.soft.guava.event;
 
 import com.google.common.eventbus.Subscribe;
 
