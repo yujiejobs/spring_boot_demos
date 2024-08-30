@@ -3,7 +3,7 @@ package com.soft;
 
 import com.google.common.collect.Lists;
 import groovy.lang.GroovyShell;
-import com.google.common.collect.Lists;
+
 import java.util.ArrayList;
 
 public class DemoTest {
