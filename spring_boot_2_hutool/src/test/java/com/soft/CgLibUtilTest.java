@@ -15,7 +15,7 @@ public class CgLibUtilTest {
         System.out.println(d2);
 
         DemoBean clone = new DemoBean();
-        BeanUtils.copyProperties(d1,clone);
+        BeanUtils.copyProperties(d1, clone);
         clone.setName("clone");
         clone.getDemoBeanInner().setName("clone-inner");
 
