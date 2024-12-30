@@ -1,5 +1,6 @@
 package com.soft;
 
+import cn.hutool.core.thread.ThreadUtil;
 import cn.hutool.core.util.RandomUtil;
 import cn.hutool.core.util.StrUtil;
 import lombok.extern.slf4j.Slf4j;
@@ -10,6 +11,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.concurrent.ExecutorService;
 
 @Slf4j
 @RestController
@@ -65,7 +68,7 @@ public class TaskControl {
                 Double score = poppedMax.getScore();
                 log.info(StrUtil.format("{}出队 value:{} score:{}", Thread.currentThread().getId(), value, score));
                 log.info("堆积数量：{}", zSetOperations.size(key));
-            } else {
+            }else {
                 log.info("未获取到数据,停止3秒");
                 Thread.sleep(3000);
             }
