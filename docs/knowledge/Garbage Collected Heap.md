@@ -1,5 +1,7 @@
 ## Garbage Collected Heap
-Java 的垃圾回收（Garbage Collection, GC）机制是自动管理内存的一个重要部分，确保程序在运行过程中不会因为内存泄漏而耗尽可用内存。Garbage Collected Heap（垃圾回收堆）是 Java 虚拟机（JVM）中用于存储对象实例的内存区域。以下是关于 Garbage Collected Heap 的详细说明：
+
+Java 的垃圾回收（Garbage Collection, GC）机制是自动管理内存的一个重要部分，确保程序在运行过程中不会因为内存泄漏而耗尽可用内存。Garbage
+Collected Heap（垃圾回收堆）是 Java 虚拟机（JVM）中用于存储对象实例的内存区域。以下是关于 Garbage Collected Heap 的详细说明：
 
 ### 1. 堆的基本概念
 
@@ -12,7 +14,8 @@ Java 堆通常被划分为几个不同的区域，这些区域有助于优化垃
 
 - **新生代（Young Generation）**：
     - **Eden 区**：大多数新创建的对象首先分配在这里。
-    - **Survivor 区（S0 和 S1）**：用于存放经过一次或多次垃圾回收后仍然存活的对象。通常有两个 Survivor 区，一个用于存放存活对象，另一个在垃圾回收时作为临时存储空间。
+    - **Survivor 区（S0 和 S1）**：用于存放经过一次或多次垃圾回收后仍然存活的对象。通常有两个 Survivor
+      区，一个用于存放存活对象，另一个在垃圾回收时作为临时存储空间。
 
 - **老年代（Old Generation 或 Tenured Generation）**：
     - 存放经过多次垃圾回收后仍然存活的对象。这些对象被认为是长期存活的，因此会被移动到老年代。
@@ -103,4 +106,5 @@ JVM 提供了多种垃圾回收器，每种回收器适用于不同的应用场�
 
 ### 总结
 
-Garbage Collected Heap 是 Java 虚拟机中用于存储对象实例的内存区域，通过垃圾回收机制自动管理内存，确保程序的稳定性和性能。了解堆的结构、垃圾回收过程和常见的垃圾回收器，有助于更好地优化 Java 应用的内存使用和性能。
+Garbage Collected Heap 是 Java 虚拟机中用于存储对象实例的内存区域，通过垃圾回收机制自动管理内存，确保程序的稳定性和性能。了解堆的结构、垃圾回收过程和常见的垃圾回收器，有助于更好地优化
+Java 应用的内存使用和性能。
