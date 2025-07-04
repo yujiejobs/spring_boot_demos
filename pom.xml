@@ -46,6 +46,7 @@
         <module>spring_boot_18_stream</module>
         <module>spring_boot_19_groovy</module>
         <module>spring_boot_20_spring</module>
+        <module>spring_boot_21_pattern</module>
     </modules>
 
     <dependencies>

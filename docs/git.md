@@ -1,4 +1,5 @@
 ## git config proxy
+
 配置socks5代理
 
 git config --global http.proxy socks5 127.0.0.1:7890
