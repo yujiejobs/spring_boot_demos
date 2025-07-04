@@ -68,7 +68,7 @@ public class TaskControl {
                 Double score = poppedMax.getScore();
                 log.info(StrUtil.format("{}出队 value:{} score:{}", Thread.currentThread().getId(), value, score));
                 log.info("堆积数量：{}", zSetOperations.size(key));
-            }else {
+            } else {
                 log.info("未获取到数据,停止3秒");
                 Thread.sleep(3000);
             }
