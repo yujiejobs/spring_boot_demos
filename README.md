@@ -29,7 +29,9 @@
 | [Excel ](spring_boot_16_excel)           | spring_boot_16_excel      | [模块自诉 ](spring_boot_16_excel/README.md)      |
 | [mvel表达式 ](spring_boot_17_mvel)          | spring_boot_17_mvel       | [模块自诉 ](spring_boot_17_mvel/README.md)       |
 | [Java 8 Stream](spring_boot_18_stream)   | spring_boot_18_stream     | [模块自诉 ](spring_boot_18_stream/README.md)     |
-| [groovy](spring_boot_18_stream)          | spring_boot_19_groovy     | [模块自诉 ](spring_boot_18_stream/README.md)     |
+| [groovy](spring_boot_19_groovy)          | spring_boot_19_groovy     | [模块自诉 ](spring_boot_19_groovy/README.md)     |
+| [spring](spring_boot_20_spring)          | spring_boot_20_spring     | [模块自诉 ](spring_boot_20_spring/README.md)     |
+| [pattern](spring_boot_21_pattern)        | spring_boot_21_pattern    | [模块自诉 ](spring_boot_21_pattern/README.md)    |
 
 ## 中间件官网文档
 
