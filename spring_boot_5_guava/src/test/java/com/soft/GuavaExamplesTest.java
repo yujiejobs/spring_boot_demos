@@ -9,6 +9,7 @@ import com.google.common.cache.LoadingCache;
 import com.google.common.eventbus.EventBus;
 import com.google.common.eventbus.Subscribe;
 import org.junit.jupiter.api.Test;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
@@ -31,9 +32,9 @@ public class GuavaExamplesTest {
 
         // 创建不可变映射
         ImmutableMap<String, Integer> immutableMap = ImmutableMap.of(
-            "one", 1,
-            "two", 2,
-            "three", 3
+                "one", 1,
+                "two", 2,
+                "three", 3
         );
         System.out.println("不可变映射: " + immutableMap);
     }
@@ -91,16 +92,16 @@ public class GuavaExamplesTest {
     void cacheExample() throws Exception {
         // 创建LoadingCache
         LoadingCache<String, String> cache = CacheBuilder.newBuilder()
-            .maximumSize(100)
-            .expireAfterWrite(5, TimeUnit.MINUTES)
-            .build(new com.google.common.cache.CacheLoader<String, String>() {
-                @Override
-                public String load(String key) throws Exception {
-                    // 模拟从数据库加载数据
-                    System.out.println("加载数据: " + key);
-                    return "Value for " + key;
-                }
-            });
+                .maximumSize(100)
+                .expireAfterWrite(5, TimeUnit.MINUTES)
+                .build(new com.google.common.cache.CacheLoader<String, String>() {
+                    @Override
+                    public String load(String key) throws Exception {
+                        // 模拟从数据库加载数据
+                        System.out.println("加载数据: " + key);
+                        return "Value for " + key;
+                    }
+                });
 
         // 获取缓存值
         System.out.println(cache.get("first"));
