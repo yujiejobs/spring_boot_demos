@@ -75,5 +75,9 @@ public class DateTest {
         Date date3 = DateUtil.parse(dateStr3);
         log.info("3:" + date3.toString());
 
+
+        Date date4 = DateUtil.parse("20250916105701");
+        log.info("4:" + date4.toString());
+
     }
 }
